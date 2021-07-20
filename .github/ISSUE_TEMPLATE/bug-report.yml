@@ -1,8 +1,8 @@
 name: Report a bug in go-ipfs
 description: Report an issue related to go-ipfs.
-labels: kind/bug, need/triage
-title: ""
-issue_body: true
+labels:
+  - kind/bug
+  - need/triage
 body:
   - type: markdown
     attributes:
