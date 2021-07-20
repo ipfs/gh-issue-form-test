@@ -25,6 +25,7 @@ body:
         - label: I am running the latest [go-ipfs version](https://dist.ipfs.io/#go-ipfs) or have an issue updating.
           required: true
   - type: dropdown
+    id: install
     validations:
       required: true
     attributes:
@@ -36,8 +37,10 @@ body:
         - third-party binary
         - built from source
   - type: textarea
+    id: version
     attributes:
       label: Version
+      render: Text
       description: |
         Enter the output of `ipfs version --all`. If you can't run that command, please include a copy of your [gateway's version page](http://localhost:8080/api/v0/version?enc=text&all=true).
   - type: textarea
