@@ -7,11 +7,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Make sure you are running the [latest version of go-ipfs][releases] before reporting an issue.
-
-        If you have an enhancement or feature request for go-ipfs, please select [a different option][issues].
-        
-        Please report possible security issues by email to security@ipfs.io
+        - Make sure you are running the [latest version of go-ipfs][releases] before reporting an issue.
+        - If you have an enhancement or feature request for go-ipfs, please select [a different option][issues].
+        - Please report possible security issues by email to security@ipfs.io
 
         [issues]: https://github.com/ipfs/go-ipfs/issues/new/choose
         [releases]: https://github.com/ipfs/go-ipfs/releases
@@ -24,7 +22,7 @@ body:
           required: true
         - label: I have searched on the [issue tracker](https://github.com/ipfs/go-ipfs/issues?q=is%3Aissue) for my bug.
           required: true
-        - label: I have updated to the latest available [go-ipfs version](https://dist.ipfs.io/#go-ipfs), or I have an issue updating.
+        - label: I am using the latest available [go-ipfs version](https://dist.ipfs.io/#go-ipfs) or have an issue updating.
           required: true
   - type: dropdown
     validations:
@@ -33,20 +31,15 @@ body:
       label: Installation method
       description: Please select your installation method
       options:
-        - label: ipfs-desktop
-          required: false
-        - label: ipfs-update or dist.ipfs.io
-          required: false
-        - label: third-party binary
-          required: false
-        - label: built from source
-          required: false
+        - ipfs-desktop
+        - ipfs-update or dist.ipfs.io
+        - third-party binary
+        - built from source
   - type: textarea
     attributes:
-      label: IPFS Version
+      label: Version
       description: |
-        Enter the output of `ipfs version --all`. If you can't run that command, please include a
-        copy of your [gateway's version page](http://localhost:8080/api/v0/version?enc=text&all=true).
+        Enter the output of `ipfs version --all`. If you can't run that command, please include a copy of your [gateway's version page](http://localhost:8080/api/v0/version?enc=text&all=true).
   - type: textarea
     attributes:
       label: Description
